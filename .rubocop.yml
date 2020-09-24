@@ -1,0 +1,129 @@
+AllCops:
+  EnabledByDefault: true
+  Exclude:
+    - 'bin/*'
+  TargetRubyVersion: 2.7
+
+Bundler/GemComment:
+  Enabled: false
+
+Layout/EmptyLines:
+  Enabled: false
+
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+  NumberOfEmptyLines: [1, 2]
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: false
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: false
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: false
+
+Layout/HashAlignment:
+  EnforcedColonStyle:      table
+  EnforcedHashRocketStyle: table
+
+Layout/HeredocIndentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 100
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: false
+
+Layout/MultilineAssignmentLayout:
+  Enabled: false
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: false
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: false
+
+Layout/SpaceInsideParens:
+  Enabled: false
+
+Layout/TrailingEmptyLines:
+  Enabled: false
+
+Lint/ConstantResolution:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/BlockLength:
+  Max: 10
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Naming/MethodParameterName:
+  AllowedNames: ['id']
+
+Style/AccessModifierDeclarations:
+  Enabled: false
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  AllowBracesOnProceduralOneLiners: true
+
+Style/ConstantVisibility:
+  Enabled: false
+
+Style/Copyright:
+  Enabled: false
+
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/InlineComment:
+  Enabled: false
+
+Style/MethodCallWithArgsParentheses:
+  IgnoredMethods:
+    - gem
+    - p
+    - pp
+    - puts
+    - raise
+    - require
+    - require_relative
+    - source
+    - unshift
+    - yield
+
+Style/MissingElse:
+  EnforcedStyle: case
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/StringHashKeys:
+  Enabled: false
