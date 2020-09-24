@@ -28,13 +28,13 @@ RSpec.describe 'basic usage' do
   let(:game)    { MyGame.new                              }
   let(:planner) { FactoryPlanner::Planner.for(game, :joe) }
 
-  it 'works' do
+  xit 'works' do
     plan = planner.execute
 
     expect(plan.steps.map(&:name)).to include :craft_stone_furnace
   end
 
-  xit 'detects success' do
+  it 'detects success' do
     planner = FactoryPlanner::Planner.for(game, :jack)
     plan    = planner.execute
 

@@ -54,6 +54,9 @@ Layout/TrailingEmptyLines:
 Lint/ConstantResolution:
   Enabled: false
 
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+
 Metrics/AbcSize:
   Max: 30
 
@@ -72,12 +75,18 @@ Metrics/PerceivedComplexity:
 Naming/MethodParameterName:
   AllowedNames: ['id']
 
+Naming/PredicateName:
+  ForbiddenPrefixes: ['is_']
+
 Style/AccessModifierDeclarations:
   Enabled: false
 
 Style/BlockDelimiters:
   EnforcedStyle: semantic
   AllowBracesOnProceduralOneLiners: true
+
+Style/ClassMethodsDefinitions:
+  Enabled: false
 
 Style/ConstantVisibility:
   Enabled: false
@@ -127,3 +136,6 @@ Style/RedundantSelf:
 
 Style/StringHashKeys:
   Enabled: false
+
+Style/SymbolArray:
+  MinSize: 5
